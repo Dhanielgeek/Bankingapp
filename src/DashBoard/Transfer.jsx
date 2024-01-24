@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { IoIosArrowRoundBack } from 'react-icons/io';
-import { useSelector,useDispatch } from 'react-redux';
+import { useSelector } from 'react-redux';
+import { useNavigate } from 'react-router-dom';
 import './dashboard.css';
 import axios from 'axios';
 import Swal from 'sweetalert2';
@@ -25,6 +26,13 @@ const Transfer = () => {
     // You can replace this with your logic to fetch the account name
     // and set it using setFetchedAccountName
   };
+  const Navigate = useNavigate()
+
+  const HandleBack = ()=>{
+    Navigate('/userdash/dashboard')
+    console.log('HELLO');
+  }
+
 
   const headers = {
     Authorization: `Bearer ${userToken}`,
@@ -63,10 +71,10 @@ const Transfer = () => {
   return (
     <div className="transferWrapper">
       <div className="transferAndButtonDiv">
-        <button>
+        <button onClick={HandleBack} style={{cursor:"pointer"}}>
           <IoIosArrowRoundBack size={24} />
         </button>
-        <p>Money Transfer</p>
+        {/* <p>Money Transfer</p> */}
       </div>
 
       <div className="AccountNumber">
@@ -114,7 +122,7 @@ const Transfer = () => {
       <div className="AccountNumber">
         <label>Pin</label>
         <input
-          type="text"
+          type="password"
           placeholder="Enter your transaction pin"
           value={pin}
           onChange={(e) => setPin(e.target.value)}
