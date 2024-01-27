@@ -1,8 +1,13 @@
 import React from 'react';
 import './dashboard.css';
+import { useDispatch, useSelector } from 'react-redux';
 import { NavLink } from 'react-router-dom';
+import { UserLogOut } from '../Features/Slice';
 
 const Menu = () => {
+  const userToken = useSelector((state) => state.mySlice.userToken) 
+  console.log(userToken);
+   const dispatch = useDispatch()
   return (
     <div className="Menubody">
       <div className="MenuHeader">
@@ -21,8 +26,9 @@ const Menu = () => {
         <NavLink to='/userDash/deposit'>Deposit</NavLink>
         <NavLink to='/userDash/pay-bills'>Pay Bills</NavLink>
         <NavLink to='/userDash/settings'>Settings</NavLink>
-        {/* <NavLink to='/userDash/user-profile'>User Profile</NavLink> */}
-        {/* <NavLink to='/userDash/logout'>Logout</NavLink> */}
+        <div className="UserProperties">
+      <button onClick={()=> dispatch(UserLogOut())}>Log Out</button>
+      </div>
       </div>
     </div>
   );

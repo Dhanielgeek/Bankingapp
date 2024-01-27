@@ -7,7 +7,7 @@ import History from './History';
 const Maincontent = () => {
   const UserBalance = useSelector((state) => state.mySlice.userBalance);
   const UserAcct = useSelector((state) => state.mySlice.userAcct);
-  const [chartKey, setChartKey] = useState(0);
+  // const [chartKey, setChartKey] = useState(0);
 
   useEffect(() => {
     // Your logic here to handle the effect when acctBalance changes
@@ -21,7 +21,7 @@ const Maincontent = () => {
   return (
     <div className="Maincontent">
       <div className="Mainbalance">
-        <h4>Balance</h4>
+        <h4>Available Balance</h4>
         <h2>₦ {UserBalance?.acctBalance}</h2>
         <p>Account Number: <span style={{fontWeight:"bolder",fontSize:"20px",color:"#001f54"}}>{UserAcct?.acctNum}</span> </p>
       </div>

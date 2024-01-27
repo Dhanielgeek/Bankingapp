@@ -10,7 +10,7 @@ const MySlice = createSlice({
       acctBalance: 0
     },
     userAcct: {
-      acctNum: 0
+      acctNum: ''
     }
   },
   reducers: {

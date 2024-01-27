@@ -6,7 +6,7 @@ import {Oval} from 'react-loader-spinner'
 import axios from 'axios';
 import Swal from 'sweetalert2';
 import { useDispatch } from 'react-redux';
-import { UserToken, Userdata,userBalance} from '../Features/Slice';
+import { UserToken, Userdata,userAcct,userBalance} from '../Features/Slice';
 
 const Login = () => {
 
@@ -46,6 +46,7 @@ const HandlePassword = (e)=>{
             Dispatch(Userdata(res.data.data))
             Dispatch(UserToken(res.data.token))
             Dispatch(userBalance(res.data.data))
+            Dispatch(userAcct(res.data.data))
             console.log(res);
             Swal.fire({
                 title: 'Login Successful!',

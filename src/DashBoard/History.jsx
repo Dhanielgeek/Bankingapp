@@ -4,13 +4,12 @@ import "./History.css"
 const History = () => {
     return (
         <main className='fullDiv'>
-            <div className='leftSideBarDiv'></div>
+       
 
             <div className='rightSideBarDiv'>
-                <article className='welcomeDiv'></article>
 
                 <article className='transactionHistiorDiv'>
-                    <div className='RoundDiv'></div>
+                    {/* <div className='RoundDiv'></div> */}
                     <p>Transaction History</p>
                 </article>
 
@@ -26,7 +25,7 @@ const History = () => {
                     </div>
                 </article>
 
-                <div className='TodayDiv'><p>Today</p></div>
+                {/* <div className='TodayDiv'><p>Today</p></div>
                 <article className='historyDivMain'>
                     <div className='historPararaph'>
                         <div className='cardItem'>
@@ -42,7 +41,7 @@ const History = () => {
                             </article>
                         </div>
                     </div>
-                </article>
+                </article> */}
             </div>
         </main>
     )
