@@ -574,3 +574,140 @@
   bottom: 27.6%;
   cursor: pointer;
 }
+@media screen and (max-width: 800px) {
+  .HomeBox{
+    width: 50%;
+  }
+  .HomeHold h3{
+   font-size: 20px;
+  }
+  .HomeHold p{
+    font-size: 12px;
+  }
+  .HomeBtn .Link{
+    width: 80%;
+    height: 60%;
+  }
+  .Signsecondlayer{
+    right: 20%;
+    left: 37.7%;
+    top: 1.5%;
+  }
+}
+@media screen and (max-width: 600px) {
+  .HomeBox{
+    width: 80%;
+  }
+  .HomeHold h3{
+   font-size: 20px;
+  }
+  .HomeHold p{
+    font-size: 12px;
+  }
+  .HomeBtn .Link{
+    width: 80%;
+    height: 60%;
+  }
+  .SignContainer{
+    width: 90%;
+  }
+  .Signsecondlayer{
+    right: 20%;
+    left: 16%;
+    top: 1.5%;
+  }
+  .loginHold{
+    width: 80%;
+  }
+  .LoginDontHave p{
+    font-size: 15px;
+  }
+  .secondlayer{
+    right: 20%;
+    left: 20%;
+    top: 3.4%;
+  }
+  .SignUpContentDownFormPwdEyes{
+    left: 70%;
+    bottom: 44%;
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 375px) {
+  .HomeBox{
+    width: 80%;
+  }
+  .HomeHold h3{
+   font-size: 20px;
+  }
+  .HomeHold p{
+    font-size: 12px;
+  }
+  .HomeBtn .Link{
+    width: 80%;
+    height: 60%;
+  }
+  .SignContainer{
+    width: 90%;
+  }
+  .Signsecondlayer{
+    right: 20%;
+    left: 17%;
+    top: 1.5%;
+  }
+  .loginHold{
+    width: 80%;
+  }
+  .LoginDontHave p{
+    font-size: 15px;
+  }
+  .secondlayer{
+    right: 20%;
+    left: 20%;
+    top: 3.4%;
+  }
+  .SignUpContentDownFormPwdEyes{
+    left: 70%;
+    bottom: 44%;
+    cursor: pointer;
+  }
+}
+@media screen and (max-width: 320px) {
+  .HomeBox{
+    width: 80%;
+  }
+  .HomeHold h3{
+   font-size: 20px;
+  }
+  .HomeHold p{
+    font-size: 12px;
+  }
+  .HomeBtn .Link{
+    width: 80%;
+    height: 60%;
+  }
+  .SignContainer{
+    width: 90%;
+  }
+  .Signsecondlayer{
+    right: 20%;
+    left: 20%;
+    top: 1.5%;
+  }
+  .loginHold{
+    width: 80%;
+  }
+  .LoginDontHave p{
+    font-size: 15px;
+  }
+  .secondlayer{
+    right: 20%;
+    left: 20%;
+    top: 3.4%;
+  }
+  .SignUpContentDownFormPwdEyes{
+    left: 70%;
+    bottom: 44%;
+    cursor: pointer;
+  }
+}

@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './dashboard.css';
 import { useSelector } from 'react-redux';
-import History from './History';
+// import History from './History';
 // import BarChart from './Bar'; // Update the path
 
 const Maincontent = () => {
@@ -22,11 +22,11 @@ const Maincontent = () => {
     <div className="Maincontent">
       <div className="Mainbalance">
         <h4>Available Balance</h4>
-        <h2>₦ {UserBalance?.acctBalance}</h2>
+        <h2>₦ {UserBalance?.acctBalance}.00</h2>
         <p>Account Number: <span style={{fontWeight:"bolder",fontSize:"20px",color:"#001f54"}}>{UserAcct?.acctNum}</span> </p>
       </div>
       <div className="chartHold" >
-        <History/>
+        {/* <History/> */}
       </div>
      
     </div>

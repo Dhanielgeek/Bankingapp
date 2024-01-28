@@ -42,7 +42,6 @@ const HandlePassword = (e)=>{
         try{ 
             setLoading(true)
             const res = await axios.post(Url,data)
-
             Dispatch(Userdata(res.data.data))
             Dispatch(UserToken(res.data.token))
             Dispatch(userBalance(res.data.data))
